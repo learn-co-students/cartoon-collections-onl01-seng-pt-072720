@@ -7,11 +7,20 @@ def summon_captain_planet(veggies)
 end
 
 def long_planeteer_calls(calls_long)
-  return true if calls_long.each_with_index { |x, index| x[index].length > 4 } 
-  return false if calls_long.each { |x| x.length <= 4 }
+  if calls_long.any? { |call| call.length > 4 }
+    true 
+  else 
+    false 
+  end 
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  i = 0
+  i < cheese_types.length
+  if ingredients.find { |x| x == cheese_types[i] }
+    return cheese_types[i]
+  else
+    nil  
+  end 
 end
