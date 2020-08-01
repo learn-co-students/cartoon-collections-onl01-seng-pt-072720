@@ -24,3 +24,11 @@ def find_the_cheese(ingredients)
     nil  
   end 
 end
+
+# def find_the_cheese(ingredients)
+#   cheeses = ["cheddar", "gouda", "camembert"]
+
+#   ingredients.find do |maybe_cheese|
+#     cheeses.include?(maybe_cheese)
+#   end
+# end
